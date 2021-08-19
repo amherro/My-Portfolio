@@ -49,7 +49,7 @@ nav a:hover {
    color: #4f4f4f;
 }
 body {
-   background-image: url("Images/bgimage.jpg");
+   background-color: rgb(0, 127, 247);
 }
 #contentTop {
    display: grid;
@@ -88,10 +88,10 @@ body {
    height: 250px;
    width: 700px;
    margin-top: 20px;
+   justify-self: right;
 }
 .aboutMeTitle {
-   margin: 40px 545px 0px 50px;
-   
+   margin: 40px 545px 0px 50px; 
    border-bottom: solid rgb(255, 255, 255) 3px;
 }
 .intro {
@@ -101,7 +101,7 @@ body {
    margin: 40px 65px 0px 65px;
 }
 .projectsTitle {
-   grid-column: 1;
+   grid-column: 2;
    grid-row: 4;
    font-weight: bold;
    border: 3px rgb(255, 255, 255) solid;
@@ -109,7 +109,9 @@ body {
    background-color: rgb(0, 0, 0);
    height: 30px;
    padding: 10px;
+   margin: 50px 0px;
    text-align: center;
+   justify-self: left;
 }
 #projects {
    display: grid;
@@ -154,6 +156,31 @@ body {
 }
 #projects a:hover {
    color: rgb(0, 0, 0);
+}
+.contact {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+}
+.contactTitle {
+   grid-column: 2;
+   padding: 20px;
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   border: 3px rgb(255, 255, 255) solid;
+   width: 150px;
+   margin-top: 50px;
+   text-align: center;
+   justify-self: left;
+}
+.contactSection {
+   grid-column: 2;
+   margin-top: 50px;
+   padding: 20px;
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   border: 3px rgb(255, 255, 255) solid;
+   height: 100px;
+   width: 500px;
 }
 footer {
    text-align: center;
