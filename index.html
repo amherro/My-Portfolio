@@ -8,18 +8,18 @@
 
     <div>
      <header>
-      <div id="navgrid">
-        <div class="siteLogo">
-            <h1><a href="#">Adam Herro <br> Front-End Web Development</a></h1>
+        <div id="navgrid">
+            <div class="siteLogo">
+                <h1><a href="#">Adam Herro <br> Front-End Web Development</a></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="Portfolio">Portfolio</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="Portfolio">Portfolio</a></li>
-                <li><a href="Contact">Contact</a></li>
-            </ul>
-        </nav>
-      </div>
 
       </header>
       <div class="body">
@@ -27,14 +27,11 @@
             <main>
                 
                 <div class="contentTop">
+                    
                     <div class="portrait">
                         <!--Put picture of me here-->   
                     </div>
-                    <!--
-                    <div class="title">
-                        <h1>Adam's Portfolio</h1>
-                    </div>
-                    -->
+                    
                     <div class="aboutMe">
                         <h2 class="aboutMeTitle">About Me</h2>
                         <div class="intro"> 
@@ -71,11 +68,22 @@
                         <h2>Contact Me</h2>
                     </header>
                     <section class="contactSection">
-                        <p>If you would like to contact me about potential employment or collaboration, feel free to reach out by email phone to my contact information below. I will get back to you as soon as possible.</p>
-                        <ul class="contactInfo">
-                            <li class="phone">(616) 802-2197</li>
-                            <li class="email">adam.herro@comcast.net</li>
-                        </ul>
+                        <p>If you would like to contact me about potential employment or collaboration, feel free to reach out by filling out the form below. I will get back to you as soon as possible.</p>
+                        <form class="contactForm">
+                            <label>Name</label>
+                            <input type="text" class="input" name="name" required>
+
+                            <label>Subject</label>
+                            <input type="text" class="input" name="subject" required>
+
+                            <label>Email</label>
+                            <input type="text" class="input" name="email" required>
+
+                            <label>Message</label>
+                            <textarea class="input" name="message" required></textarea>
+
+                            <button type="submit" class="submitBtn" name="submit">Submit</button>
+                        </form>
                     </section>
                 </div>
 
