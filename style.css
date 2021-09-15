@@ -180,7 +180,7 @@ body {
 .contactTitle {
    grid-column: 1;
    color: rgb(255, 255, 255);
-   margin: 0px 855px 0px 200px;
+   margin: 0px 905px 0px 150px;
    border-bottom: 3px solid;
    text-align: left;
    justify-self: right;
