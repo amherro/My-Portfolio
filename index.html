@@ -5,27 +5,35 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
-    <div>
-     <header>
-        <div id="navgrid">
-            <div class="siteLogo">
-                <h1><a href="#">Adam Herro <br> Front-End Web Development</a></h1>
+    <body>
+        <header>
+            <div id="navgrid">
+                <div class="siteLogo">
+                    <h1><a href="#">Adam Herro <br> Front-End Web Development</a></h1>
+                </div>
+                <nav class="nav">
+                    <button id="button" class="menuBtn">
+                        <div class="menuBar"></div>
+                        <div class="menuBar"></div>
+                        <div class="menuBar"></div>
+                    </button>
+                    <div class="menu">
+                        <div id="close" class="close">
+                            <button class="closeBtn">X</button>
+                        </div>
+                        <div class="btnsSection">
+                            <button class="section homeBtn">About</button>
+                            <button class="section aboutBtn">Portfolio</button>
+                            <button class="section contactBtn">Contact</button>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="AboutMe.html">About Me</a></li>
-                    <li><a href="Portfolio">Portfolio</a></li>
-                    <li><a href="Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
 
-      </header>
-      <div class="body">
-        <body>
+        </header>
+      <div>
+        <div>
             <main>
-                
                 <div class="contentTop">
                     
                     <div class="portrait">
@@ -42,7 +50,15 @@
                                 in the "Contact" section. 
                             </p>
                             -->
-                            <p>Thank you for visiting my portfolio. I am a front-end web developer using HTML, CSS, and JavaScript in my projects. I am currently learning React, which I am implementing into my current projects. I love programming because it is like one big puzzle that I get to solve to make my ideas work. Outside of coding I love being in the outdoors as well as cheering on the Detroit Red Wings and Arkansas Razorbacks (my alma mater). I am currently looking for employment with a great team that I can make a positive impact with and grow my skills as a developer. Feel free to browse any of my projects. If you would like to get in touch, feel free to contact me using the information in the "Contact" section below.</p>
+                            <div class="aboutCard about1">
+                                <div>Thank you for visiting my portfolio. I am a front-end web developer using HTML, CSS, and JavaScript in my projects. I am currently learning React, which I am implementing into my current projects.</div>
+                            </div>
+                            <div class="aboutCard about2">
+                                <div>Outside of coding I love being in the outdoors as well as cheering on the Detroit Red Wings and Arkansas Razorbacks (my alma mater).</div> 
+                            </div>
+                            <div class="aboutCard about3">
+                                <div>Feel free to browse any of my projects. If you would like to get in touch, feel free to contact me using the information in the "Contact" section below.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -51,19 +67,66 @@
                         <h2>My Projects</h2>
                     </div>
                     <section class="websites">
-                        <h2><strong>Websites</strong></h2>
-                            <ul>
-                                <li><a href="https://amherro.github.io/Google-Homepage/#">Google Homepage</a></li>
-                                <li><a href="https://amherro.github.io/Hunting-Guide-Page/">Hunting Guide Page</a></li>
-                            </ul>
+                        <h2 class="websiteSectionTitle"><strong>Websites</strong></h2>
+                        <div class="websitesLayout">
+                            <div class="projectCard google">
+                                <a href="https://amherro.github.io/Google-Homepage/#"><img class="googleImg" src="/Images/Google_Home_Img.png" alt="Google Homepage Project"></a>
+                                <li class="liveVersion"><a href="https://amherro.github.io/Google-Homepage/#">Live Version</a></li>
+                                <li class="ghRepo">
+                                    <a href="https://github.com/amherro/Google-Homepage">GitHub</a>
+                                    <div>
+                                        <a href="https://github.com/amherro/Google-Homepage"><img class="ghBtnLogo" src="/Images/light_github_logo.png" alt="Light GitHub Logo"></a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="projectCard huntingPage">
+                                <a href="https://amherro.github.io/Hunting-Guide-Page/"><img class="huntingImg" src="/Images/Hunting_Guide_Img.png" alt="Hunting Guide Landing Page"></a>
+                                <li class="liveVersion"><a href="https://amherro.github.io/Hunting-Guide-Page/">Live Version</a></li>
+                                <li class="ghRepo">
+                                    <a href="https://github.com/amherro/Hunting-Guide-Page">GitHub</a>
+                                    <div>
+                                        <a href="https://github.com/amherro/Hunting-Guide-Page"><img class="ghBtnLogo" src="/Images/light_github_logo.png" alt="Light GitHub Logo"></a>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
                     </section>
                     <section class="apps">
-                            <h2><strong>Applications</strong></h2>
-                            <ul>
-                                <li><a href="https://amherro.github.io/Calculator-App/">Mobile Calculator</a></li>
-                                <li><a href="https://amherro.github.io/Etch-A-Sketch/">Etch-A-Sketch</a></li>
-                                <li><a href="https://amherro.github.io/Rock-Paper-Scissors-Game/">Rock-Paper-Scissors Game</a></li>
-                            </ul>
+                            <h2 class="appTitle"><strong>Applications</strong></h2>
+                            <div class="appLayout">
+                                <div class="projectCard calculator">
+                                    <a href="https://amherro.github.io/Calculator-App/"><img class="calcImg" src="/Images/Calculator_Img.png" alt="Calculator App"></a>
+                                    <li class="liveVersion"><a href="https://amherro.github.io/Calculator-App/">Live Version</a></li>
+                                    <li class="ghRepo">
+                                        <a href="https://github.com/amherro/Calculator-App">GitHub</a>
+                                        <div>
+                                            <a href="https://github.com/amherro/Calculator-App"><img class="ghBtnLogo" src="/Images/light_github_logo.png" alt="Light GitHub Logo"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="projectCard etchASketch">
+                                    <a href="https://amherro.github.io/Etch-A-Sketch/"><img class="etchImg" src="/Images/Etch_A_Sketch_Img.png" alt="Etch-A-Sketch"></a>
+                                    <li class="liveVersion"><a href="https://amherro.github.io/Etch-A-Sketch/">Live Version</a></li>
+                                    <li class="ghRepo">
+                                        <a href="https://github.com/amherro/Etch-A-Sketch">GitHub</a>
+                                        <div>
+                                            <a href="https://github.com/amherro/Etch-A-Sketch"><img class="ghBtnLogo" src="/Images/light_github_logo.png" alt="Light GitHub Logo"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="projectCard rockPaperScissors">
+                                    <a href="https://amherro.github.io/Rock-Paper-Scissors-Game/"><img class="rpsImg" src="/Images/Rock_Paper_Scissors_Img.png" alt="Rock-Paper-Scissors"></a>
+                                    <li class="liveVersion"><a href="https://amherro.github.io/Rock-Paper-Scissors-Game/">Live Version</a></li>
+                                    <li class="ghRepo">
+                                        <a href="https://github.com/amherro/Rock-Paper-Scissors-Game">GitHub</a>
+                                        <div>
+                                            <a href="https://github.com/amherro/Rock-Paper-Scissors-Game"><img class="ghBtnLogo" src="/Images/light_github_logo.png" alt="Light GitHub Logo"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div> 
+                        
+                            
                         </div>
                     </section>
                 </div>
@@ -87,10 +150,11 @@
             </main>
 
             <footer>
-                <a href="https://github.com/amherro"><img class="gitHubLogo" src="/Images/git_hub_logo.png"></a> 
+                <a href="https://github.com/amherro"><img class="gitHubLogo" src="/Images/light_github_logo.png"></a> 
                 <p class="copyRight">Copyright © 2021 amherro</p>
             </footer>
-        </body>
+        </div>
       </div>
-    </div>
+    </body>
+    <script src="script.js"></script>
 </html>
