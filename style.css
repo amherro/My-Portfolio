@@ -206,6 +206,12 @@ body {
    margin: 0px 20px;
    margin-bottom: 10px;
 }
+.cardTitle {
+   text-align: center;
+   border: 2px solid rgb(255, 255, 255);
+   background-color: rgb(1, 109, 6);
+   padding: 5px 0px;
+}
 .liveVersion {
    background-color: rgb(51, 99, 255);
    padding: 10px;
