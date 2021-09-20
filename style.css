@@ -322,7 +322,6 @@ li {
    text-align: left;
    justify-self: right;
 }
-
 .contactInfo {
    grid-column: 2;
    grid-row: 2;
@@ -384,6 +383,76 @@ footer a {
 footer a:hover {
    color: #000;
 }
+.footerContent {
+   display: flex;
+   justify-content: center;
+}
 .copyRight {
   margin: 10px 0px 0px 20px;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 700px) {
+   .siteLogo {
+      margin: 10px 0px 0px 5px;
+      padding: 30px;
+   }
+   .menuBtn {
+      margin: 0px;
+      margin-right: 80px;
+   }
+   .menu {
+      margin: 0px;
+      padding: 0px;
+   }
+   .btnsSection {
+      display: flex;
+      flex-direction: column;
+   }
+   .section {
+      margin: 0px 50px 10px 50px;
+   }
+   .intro {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   .aboutMeTitle {
+    margin: 50px 120px 0px 100px;
+   }
+   .aboutCard {
+      margin: 20px;
+   }
+   .about3 {
+      margin: 20px
+   }
+   #projects {
+      display: flex;
+      flex-direction: column;
+   }
+   .projectsTitle {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-left: 90px;
+      margin-right: 170px;
+   }
+   .websites {
+      margin-left: 0px;
+      margin-right: 60px;
+   }
+   .contactTitle {
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 170px;
+   }
+   .contactInfo {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+   }
+   .email {
+      padding: 25px;
+      padding-bottom: 50px;
+      margin-top: 10px;
+   }
 }
