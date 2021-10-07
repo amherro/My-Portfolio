@@ -126,11 +126,15 @@ body {
    grid-column: 2;
    height: 250px;
    width: 250px;
-   border-radius: 50%;
-   border: 3px rgb(255, 255, 255) solid;
    justify-self: center;
    margin-top: 40px;
    position: relative;
+}
+.portraitImg {
+   width: 250px;
+   height: 300px;
+   border: 5px rgb(255, 255, 255) solid;
+   border-radius: 50%;
 }
 
 .aboutMe {
@@ -141,7 +145,7 @@ body {
    font-weight: bold;
    color: rgb(255, 255, 255);
    padding: 20px 50px 50px 50px;
-   margin: 0px 100px 50px 100px;
+   margin: 60px 100px 50px 100px;
    justify-self: right;
 }
 .aboutMeTitle {
@@ -213,7 +217,7 @@ body {
 .cardTitle {
    text-align: center;
    border: 2px solid rgb(255, 255, 255);
-   background-color: rgb(1, 109, 6);
+   background-color: rgb(1, 109, 6); 
    padding: 5px 0px;
 }
 .liveVersion {
@@ -252,14 +256,14 @@ li {
    width: 200px;
    height: 100px;
    margin-top: 10px;
-   border: 2px solid white;
+   border: 2px solid rgb(255, 255, 255);
 }
 .huntingImg {
    grid-column: 2;
    width: 200px;
    height: 100px;
    margin-top: 10px;
-   border: 2px solid white;
+   border: 2px solid rgb(255, 255, 255);
 }
 .apps {
    grid-column: 2;
