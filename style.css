@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+}
+#navgrid {
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 0px 50px 0px;
+}
+.siteLogo {
+   grid-column: 1;
+   padding: 20px 200px 20px 10px;
+   margin: 60px 110px 0px 30px;
+   color: #fff;
+   background-color: rgb(36, 36, 36);
+   border: solid 3px #fff;
+   font-size: 10px;
+}
+.siteLogo a {
+   color: rgb(255, 254, 254);
+   text-decoration: none;
+}
+.nav {
+   grid-column: 2 / 4;
+   grid-row: 1;
+   padding: 30px 15px 0px 15px;
+   
+}
+.menuBtn {
+   margin: 50px 100px 0px 50px;
+   background: none;
+   border: none;
+   text-align: right;
+}
+.menuBtn:hover {
+   border: 2px solid rgb(255, 255, 255);
+}
+.menuBar {
+   width: 45px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+}
+.menu {
+   display: none;
+   grid-column: 2 / 4;
+   background-color: rgb(36, 36, 36);
+   color: rgb(255, 255, 255);
+   border: 3px solid rgb(255, 255, 255);
+   margin-top: 30px;
+   margin-right: 50px;
+   padding: 5px 0px 15px 0px;
+}
+.close {
+   text-align: right;
+}
+.closeBtn {
+   color: rgb(255, 255, 255);
+   background-color: rgb(255, 0, 0);
+   border: 2px solid rgb(255, 255, 255);
+   padding: 0px 5px;
+   font-size: 12px;
+   margin: 5px 30px 0px 0px ;
+}
+.closeBtn:hover {
+   cursor: pointer;
+}
+.closeBtn:active {
+   font-size: 14px;
+}
+.menuTitle {
+   text-align: left;
+   font-size: 12px;
+   margin-bottom: 20px;
+   margin-left: 60px;
+}
+.btnsSection {
+   display: flex;
+   background-color: rgb(36, 36, 36);
+   margin-top: 10px;
+}
+a {
+   text-decoration: none;
+   color: white;
+}
+.section {
+   font-size: 15px;
+   color: rgb(255, 255, 255);
+   background: none;
+   border: none;
+   margin: 5px 50px;
+}
+.section:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+body {
+   background-color: rgb(100, 100, 100);
+   grid-row: 2 / 4;
+}
+#navgrid, .menu {
+   grid-row: 1 / 3;
+}
+.contentTop {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-row-gap: 1em;
+
+   color: rgb(255, 255, 255);
+   background-color: black;
+   align-items: center;
+   align-self: center;
+   position: relative;
+}
+.contentTop::before {
+   background-image: url('./Images/background_image.jpg');
+   background-size: cover;
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   content: '';
+   opacity: 0.35;
+}
+.portrait {
+   grid-column: 2;
+   height: 250px;
+   width: 250px;
+   justify-self: center;
+   margin-top: 40px;
+   position: relative;
+}
+.portraitImg {
+   width: 250px;
+   height: 300px;
+   border: 5px rgb(255, 255, 255) solid;
+   border-radius: 50%;
+}
+
+.aboutMe {
+   grid-column: 1 / 4;
+   grid-row: 2;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   padding: 20px 50px 50px 50px;
+   margin: 60px 100px 50px 100px;
+   justify-self: right;
+}
+.aboutMeTitle {
+   grid-column: 1;
+   margin: 0px 100px 20px 70px;
+   /* border-bottom: 3px solid rgb(255, 255, 255); */
+   text-align: center;
+   justify-self: left;
+   position: relative;
+   font-size: 35px;
+}
+.intro {
+   grid-column: 1 / 4;
+   grid-row: 3;
+   text-align: left;
+   margin: 20px 40px 0px 40px;
+   position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.aboutCard {
+   background-color: rgb(68, 68, 68);
+   border: 2px solid rgb(255, 255, 255);
+   padding: 20px;
+   margin: 0px 20px;
+   line-height: 30px;
+}
+.about3 {
+   grid-column: 1 / 3;
+   margin: 20px 200px;
+}
+#projects {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1em;
+   color: rgb(255, 254, 254);
+   background-color: rgb(133, 133, 133);
+   padding: 50px;
+}
+#projects ul {
+   list-style: none;
+   display: inline;
+}
+#projects a {
+   margin: 2px 5px;
+   color: #fff;
+   text-decoration: none;
+}
+#projects a:hover {
+   cursor: pointer;
+}
+.projectsTitle {
+   grid-column: 1;
+   font-weight: bold;
+   font-size: 24px;
+   /* border-bottom: 3px solid rgb(255, 255, 255); */
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   height: 30px;
+   margin-bottom: 30px;
+   margin-left: 0px;
+   margin-right: 100px;
+   text-align: center;
+   justify-self: center;
+}
+.projectCard {
+   padding-bottom: 0px;
+   margin: 0px 20px;
+   margin-bottom: 10px;
+}
+.cardTitle {
+   text-align: center;
+   border: 2px solid rgb(255, 255, 255);
+   background-color: rgb(1, 109, 6); 
+   padding: 5px 0px;
+}
+.liveVersion {
+   background-color: rgb(51, 99, 255);
+   padding: 10px;
+   margin: 0px 5px;
+}
+.ghRepo {
+   background-color: black;
+   padding: 10px;
+   margin: 0px 5px;
+   display: flex;
+}
+.websites {
+   grid-column: 1;
+   grid-row: 2;
+   text-align: left;
+   border: 5px solid rgb(255, 255, 255);
+   margin-left: 60px;
+   background-color: rgb(94, 94, 94);
+   padding-top: 15px;
+}
+li {
+   list-style: none;
+}
+.websiteSectionTitle {
+   text-align: center;
+}
+.websitesLayout {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 25px;
+}
+.googleImg {
+   grid-column: 1;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid rgb(255, 255, 255);
+}
+.huntingImg {
+   grid-column: 2;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid rgb(255, 255, 255);
+}
+.apps {
+   grid-column: 2;
+   grid-row: 2;
+   text-align: lefts;
+   border: 5px solid rgb(255, 255, 255);
+   background-color: rgb(94, 94, 94);
+   margin-right: 60px;
+   padding-top: 15px;
+}
+.appTitle {
+   text-align: center;
+}
+.appLayout {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 25px;
+}
+.calculator {
+   grid-column: 1;
+}
+.etchASketch {
+   grid-column: 2;
+}
+.rockPaperScissors {
+   grid-column: 3;
+}
+.calcImg {
+   grid-column: 1;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid white;
+}
+.etchImg {
+   grid-column: 2;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid white;
+}
+.rpsImg {
+   grid-column: 3;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid white;
+}
+.ghBtnLogo {
+   height: 20px;
+   width: 20px;
+}
+.contact {
+   padding: 250px;
+   margin: 20px 0px;
+   padding: 50px;
+   justify-content: center;
+}
+.contactTitle {
+   grid-column: 1;
+   color: rgb(255, 255, 255);
+   font-size: 24px;
+   margin: 0px 0px 0px 150px;
+   /* border-bottom: 3px solid; */
+   text-align: left;
+   justify-self: right;
+}
+.contactInfo {
+   grid-column: 2;
+   grid-row: 2;
+   justify-items: right;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 40px;
+}
+.phone {
+   grid-column: 1;
+   grid-row: 2;
+   border: 1px solid black;
+   width: 150px;
+   margin-right: 50px;
+   padding: 20px 50px 50px 50px;
+   border: 5px solid rgb(255, 255, 255);
+   background-color: rgb(68, 68, 68);
+}
+.phoneTitle {
+   color: rgb(255, 255, 255);
+   border-bottom: 2px solid rgb(255, 255, 255);
+   text-align: center;
+   margin: 0px 40px 20px 40px;;
+   
+}
+.phoneNumber {
+   color: rgb(255, 255, 255);
+   text-align: center;
+}
+.email {
+   grid-column: 2;
+   width: 200px;
+   margin-right: 50px;
+   padding: 20px 50px 50px 50px;
+   border: 5px solid rgb(255, 255, 255);
+   background-color: rgb(68, 68, 68);
+}
+.emailTitle {
+   color: rgb(255, 255, 255);
+   border-bottom: 2px solid rgb(255, 255, 255);
+   margin: 0px 60px 20px 70px;
+   text-align: center;
+}
+.emailAddress {
+   color: rgb(255, 255, 255);
+   text-align: center;
+}
+footer {
+   background-color: #4d4d4d;
+   color: #fff;
+   padding: 50px;
+   display: flex;
+   justify-content: center;
+}
+footer a {
+   color: #fff;
+   text-decoration: none;
+}
+footer a:hover {
+   color: #000;
+}
+.footerContent {
+   display: flex;
+   justify-content: center;
+}
+.copyRight {
+  margin: 10px 0px 0px 20px;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 950px) {
+   .siteLogo {
+      margin: 10px 0px 0px 5px;
+      padding: 30px;
+   }
+   .menuBtn {
+      margin: 0px;
+      margin-right: 80px;
+   }
+   .menu {
+      margin: 0px;
+      padding: 0px;
+   }
+   .btnsSection {
+      display: flex;
+      flex-direction: column;
+   }
+   .section {
+      margin: 0px 50px 10px 50px;
+   }
+   #intro {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .aboutMe {
+      margin: 60px 0px 50px 0px;
+   }
+   .aboutMeTitle {
+    margin: 50px 0px 0px 25px;
+    grid-column: 1 / 3;
+    justify-self: center;
+   }
+   .aboutCard {
+      margin: 20px 0px 20px 0px;
+      grid-column: 1 / 3;
+      padding-right: 20px;
+   }
+   #projects {
+      display: flex;
+      flex-direction: column;
+   }
+   .projectsTitle {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-right: 15px;
+   }
+   .websites {
+      margin-left: 60px;
+      margin-right: 60px;
+   }
+   .apps {
+      margin-left: 60px;
+      margin-right: 60px;
+   }
+   .contactTitle {
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+   .contactInfo {
+      display: flex;
+      margin-left: 50px;
+   }
+   .phone {
+      margin-right: 10px;
+   }
+   .email {
+      padding: 25px;
+      padding-bottom: 50px;
+   }
+}
