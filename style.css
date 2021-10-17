@@ -403,14 +403,14 @@ footer a:hover {
 }
 
 /* Mobile Responsiveness */
-@media(max-width: 700px) {
+@media(max-width: 950px) {
    .siteLogo {
-      margin: 10px 0px 0px 5px;
+      margin: 10px 30px 0px 5px;
       padding: 30px;
    }
    .menuBtn {
       margin: 0px;
-      margin-right: 80px;
+      margin-right: 20px;
    }
    .menu {
       margin: 0px;
@@ -451,12 +451,12 @@ footer a:hover {
       margin-right: 15px;
    }
    .websites {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 30px;
+      margin-right: 20px;
    }
    .apps {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 30px;
+      margin-right: 20px;
    }
    .contactTitle {
       text-align: center;
@@ -465,10 +465,11 @@ footer a:hover {
    }
    .contactInfo {
       display: flex;
-      margin-left: 50px;
+      flex-direction: column;
+      margin-left: 25px;
    }
    .phone {
-      margin-right: 10px;
+      margin-bottom: 20px;
    }
    .email {
       padding: 25px;
