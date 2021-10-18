@@ -36,9 +36,9 @@
 }
 .menuBar {
    width: 45px;
-    height: 5px;
-    margin: 6px 0;
-    background-color: white;
+   height: 5px;
+   margin: 6px 0;
+   background-color: white;
 }
 .menu {
    display: none;
@@ -49,6 +49,7 @@
    margin-top: 30px;
    margin-right: 50px;
    padding: 5px 0px 15px 0px;
+   animation: menuSlide 0.7s;
 }
 .close {
    text-align: right;
@@ -63,6 +64,8 @@
 }
 .closeBtn:hover {
    cursor: pointer;
+   animation-name: rotateCloseBtn;
+   animation-duration: 1s;
 }
 .closeBtn:active {
    font-size: 14px;
@@ -104,7 +107,6 @@ body {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
    grid-row-gap: 1em;
-
    color: rgb(255, 255, 255);
    background-color: black;
    align-items: center;
@@ -136,7 +138,6 @@ body {
    border: 5px rgb(255, 255, 255) solid;
    border-radius: 50%;
 }
-
 .aboutMe {
    grid-column: 1 / 4;
    grid-row: 2;
@@ -265,6 +266,9 @@ li {
    margin-top: 10px;
    border: 2px solid rgb(255, 255, 255);
 }
+.googleImg:hover, .huntingImg:hover {
+   animation: cardFlip 1.5s;
+}
 .apps {
    grid-column: 2;
    grid-row: 2;
@@ -298,6 +302,9 @@ li {
    margin-top: 10px;
    border: 2px solid white;
 }
+.calcImg:hover, .etchImg:hover, .rpsImg:hover, .resumeImg:hover {
+   animation: cardFlip 1.5s;
+}
 .etchImg {
    grid-column: 2;
    width: 200px;
@@ -312,9 +319,20 @@ li {
    margin-top: 10px;
    border: 2px solid white;
 }
+.resumeImg {
+   grid-column: 4;
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+   border: 2px solid white;
+}
 .ghBtnLogo {
    height: 20px;
    width: 20px;
+}
+.ghBtnLogo:hover {
+   animation-name: rotateGitHub;
+   animation-duration: 1s;
 }
 .contact {
    padding: 250px;
@@ -337,6 +355,10 @@ li {
    display: flex;
    justify-content: space-evenly;
    margin-top: 40px;
+}
+.infoBox:hover {
+   background-color: rgb(0, 117, 226);
+   font-weight: 900;
 }
 .phone {
    grid-column: 1;
@@ -397,6 +419,23 @@ footer a:hover {
 }
 .copyRight {
   margin: 10px 0px 0px 20px;
+}
+
+@keyframes rotateCloseBtn {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+@keyframes rotateGitHub {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+}
+@keyframes menuSlide {
+   0% {margin-top: -50px;}
+   100% {margin-top: 30px;}
+}
+@keyframes cardFlip {
+   0% {transform: rotateY(0deg);}
+   100% {transform: rotateY(360deg);}
 }
 
 /* Mobile Responsiveness */
