@@ -294,7 +294,7 @@ li {
 .etchASketch {
    grid-column: 2;
 }
-.rockPaperScissors {
+.libraryApp {
    grid-column: 3;
 }
 .calcImg {
@@ -304,7 +304,7 @@ li {
    margin-top: 10px;
    border: 2px solid white;
 }
-.calcImg:hover, .etchImg:hover, .rpsImg:hover, .resumeImg:hover {
+.calcImg:hover, .etchImg:hover, .libraryImg:hover, .resumeImg:hover {
    animation: cardFlip 1.5s;
 }
 .etchImg {
@@ -314,7 +314,7 @@ li {
    margin-top: 10px;
    border: 2px solid white;
 }
-.rpsImg {
+.libraryImg {
    grid-column: 3;
    width: 200px;
    height: 100px;
